@@ -41,7 +41,7 @@ node {
                           CATTLE_URL     = credentials('CATTLE_URL')
                         }
             steps {
-                sh '
+                sh """
                 docker run --rm -it \
                 -e CATTLE_ACCESS_KEY="$CATTLE_ACCESS_KEY" \
                 -e CATTLE_SECRET_KEY="$CATTLE_SECRET_KEY" \
@@ -51,7 +51,7 @@ node {
                 --batch_size 3 --start_first \
                 --auto_complete --timeout 600\
                 /
-                '
+                """
                 }
         }
 }
