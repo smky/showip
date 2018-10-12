@@ -33,4 +33,12 @@ node {
             app.push("latest")
         }
     }
+        stage('Deploy Cattle') {
+        /* Deploy to production: */
+
+            steps {
+                sh "docker run --rm -it -e CATTLE_ACCESS_KEY="$CATTLE_ACCESS_KEY" -e CATTLE_SECRET_KEY="$CATTLE_SECRET_KEY" -e CATTLE_URL="http://192.168.1.155:8080" etlweather/gaucho upgrade 1s31 --imageUuid 'docker:kamas/showip:latest' --batch_size 3 --start_first --auto_complete --timeout 600"
+                }
+        }
+    }
 }
