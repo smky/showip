@@ -35,8 +35,11 @@ node {
     }
         stage('Deploy Cattle') {
         /* Deploy to production: */
+            
+            withCredentials([text(credentialsId: 'CATTLE_ACCESS_KEY', variable: 'CATTLE_ACCESS_KEY')]) {
+
                     sh 'docker run --rm -i \
-                -e CATTLE_ACCESS_KEY="76186D0414ECF2CBDFC4" \
+                -e CATTLE_ACCESS_KEY="$CATTLE_ACCESS_KEY" \
                 -e CATTLE_SECRET_KEY="oe4fKyyHKHyNtAZYZc32duf943Zp5Q3iqzko5ppD" \
                 -e CATTLE_URL="http://192.168.1.155:8080/" \
                 etlweather/gaucho upgrade 1s31  \
