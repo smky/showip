@@ -43,7 +43,7 @@ node {
                 --imageUuid "docker:kamas/showip:latest" \
                 --batch_size 3 --start_first \
                 --auto_complete --timeout 600 \
-                /'
+                '
                 
         }
 }
