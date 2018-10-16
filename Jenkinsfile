@@ -37,8 +37,8 @@ node {
         /* Deploy to production: */
             
             withCredentials([
-                string(credentialsId: 'CATTLE_ACCESS_KEY', variable: 'CATTLE_ACCESS_KEY')
-                string(credentialsId: 'CATTLE_SECRET_KEY', variable: 'CATTLE_SECRET_KEY')
+                string(credentialsId: 'CATTLE_ACCESS_KEY', variable: 'CATTLE_ACCESS_KEY'),
+                string(credentialsId: 'CATTLE_SECRET_KEY', variable: 'CATTLE_SECRET_KEY'),
                 string(credentialsId: 'CATTLE_URL', variable: 'CATTLE_URL')
             
             ]) {
