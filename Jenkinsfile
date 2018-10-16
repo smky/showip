@@ -36,7 +36,7 @@ node {
         stage('Deploy Cattle') {
         /* Deploy to production: */
             
-            withCredentials([text(credentialsId: 'CATTLE_ACCESS_KEY', variable: 'CATTLE_ACCESS_KEY')]) {
+            withCredentials([file(credentialsId: 'CATTLE_ACCESS_KEY', variable: 'CATTLE_ACCESS_KEY')]) {
 
                     sh 'docker run --rm -i \
                 -e CATTLE_ACCESS_KEY="$CATTLE_ACCESS_KEY" \
