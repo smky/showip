@@ -38,8 +38,8 @@ node {
 
             steps {
                 sh """
-                echo credentials('CATTLE_ACCESS_KEY')
-                echo 'CATTLE_ACCESS_KEY'
+                echo "credentials('CATTLE_ACCESS_KEY')"
+                echo "'CATTLE_ACCESS_KEY'"
                 """
                 }
         }
