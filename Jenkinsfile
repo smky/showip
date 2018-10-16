@@ -35,10 +35,7 @@ node {
     }
         stage('Deploy Cattle') {
         /* Deploy to production: */
-
-            docker.withTool('docker') {
-
                     sh "done"
-                }
+                
         }
 }
