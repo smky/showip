@@ -16,12 +16,12 @@ function getRealIpAddr()
     return $ip;
 }
 
-/*
+
 $ClientIP = getRealIpAddr();
 
 echo "Server IP Address:". $_SERVER['SERVER_ADDR']."		";
 echo "Your IP Address:". $ClientIP.PHP_EOL;
-
+/*
 foreach (getallheaders() as $name => $value) {
     echo "$name: $value<br>\n";
 }
