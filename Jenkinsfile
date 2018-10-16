@@ -35,7 +35,7 @@ node {
     }
         stage('Deploy Cattle') {
         /* Deploy to production: */
-                    sh "done"
+                    sh 'echo "done"'
                 
         }
 }
