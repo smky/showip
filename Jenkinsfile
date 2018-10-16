@@ -35,14 +35,11 @@ node {
     }
         stage('Deploy Cattle') {
         /* Deploy to production: */
-            environment {
-                          CATTLE_ACCESS_KEY     = credentials('CATTLE_ACCESS_KEY')
-                          CATTLE_SECRET_KEY = credentials('CATTLE_SECRET_KEY')
-                          CATTLE_URL     = credentials('CATTLE_URL')
-                        }
+
             steps {
                 sh """
-                echo "$CATTLE_ACCESS_KEY"
+                echo credentials('CATTLE_ACCESS_KEY')
+                echo 'CATTLE_ACCESS_KEY'
                 """
                 }
         }
