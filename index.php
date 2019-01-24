@@ -26,5 +26,7 @@ foreach (getallheaders() as $name => $value) {
     echo "$name: $value<br>\n";
 }
 
+
+//helo
 */
 ?>
