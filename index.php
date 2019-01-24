@@ -27,6 +27,6 @@ foreach (getallheaders() as $name => $value) {
 }
 
 
-//helo
+
 */
 ?>
