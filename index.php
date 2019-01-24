@@ -22,7 +22,7 @@ $ClientIP = getRealIpAddr();
 echo "Server IP Address:". $_SERVER['SERVER_ADDR']."		";
 echo "Your IP Address:". $ClientIP.PHP_EOL;
 
-echo "test webhook relay";
+//echo "test webhook relay";
 /*
 foreach (getallheaders() as $name => $value) {
     echo "$name: $value<br>\n";
