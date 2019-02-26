@@ -21,6 +21,8 @@ $ClientIP = getRealIpAddr();
 
 echo "Server IP Address:". $_SERVER['SERVER_ADDR']."		";
 echo "Your IP Address:". $ClientIP.PHP_EOL;
+echo 'Current PHP version: ' . phpversion().PHP_EOL;
+
 
 //echo "test webhook relay";
 /*
