@@ -24,8 +24,9 @@ echo "Your IP Address:". $ClientIP."		";
 echo 'Current PHP version: ' . phpversion()."		";
 
 $version = apache_get_version();
+echo "Current Apache version:"."$version";
 
-echo "Current Apache version:"."$version".PHP_EOL;
+echo $_SERVER['HTTP_USER_AGENT'].PHP_EOL;
 
 //echo "test webhook relay";
 /*
