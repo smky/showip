@@ -28,13 +28,4 @@ echo "Current Apache version:"."$version";
 
 echo $_SERVER['HTTP_USER_AGENT'].PHP_EOL;
 
-//echo "test webhook relay";
-/*
-foreach (getallheaders() as $name => $value) {
-    echo "$name: $value<br>\n";
-}
-
-
-
-*/
 ?>
