@@ -19,13 +19,13 @@ function getRealIpAddr()
 
 $ClientIP = getRealIpAddr();
 
-echo "Server IP Address:". $_SERVER['SERVER_ADDR']."		";
-echo "Your IP Address:". $ClientIP."		";
-echo 'Current PHP version: ' . phpversion()."		";
+echo "Server IP :". $_SERVER['SERVER_ADDR']."		";
+echo "Your IP :". $ClientIP."		";
+echo 'PHP version: ' . phpversion()."		";
 
 $version = apache_get_version();
-echo "Current Apache version:"."$version";
+echo "Apache version:"."$version";
 
-echo "Current User_Agent:".$_SERVER['HTTP_USER_AGENT'].PHP_EOL;
+echo "User_Agent:".$_SERVER['HTTP_USER_AGENT'].PHP_EOL;
 
 ?>
