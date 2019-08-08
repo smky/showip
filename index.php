@@ -26,6 +26,6 @@ echo 'Current PHP version: ' . phpversion()."		";
 $version = apache_get_version();
 echo "Current Apache version:"."$version";
 
-echo $_SERVER['HTTP_USER_AGENT'].PHP_EOL;
+echo "Current User_Agent:".$_SERVER['HTTP_USER_AGENT'].PHP_EOL;
 
 ?>
